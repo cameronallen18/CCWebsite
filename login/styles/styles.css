@@ -1,0 +1,360 @@
+@charset "utf-8";
+/* CCITY.MIT.EDU STYLE SHEET V3.0 */
+body { 
+	background:#FFFFFF; 
+	font-family:Tahoma, Geneva, sans-serif; 
+	margin:0; 
+	padding:0; 
+	color:#000000; 
+	}
+
+a:active { color:#DAA520; text-decoration:underline; }
+
+a:hover { color:#999999;text-decoration:overline;}
+
+a { color:#DAA520; text-decoration:underline; }
+
+a:visited { color:#DAA520; text-decoration:underline; }
+	
+/* SECTIONS FOR HEADER IMAGE DIVISIONS */
+div#header	{ 
+	margin:0;
+	padding:0;
+	width:100%; 
+	height:200px;
+	text-align:center;
+	background-image:url(../../images/main-banner-back.jpg); 
+	background-repeat:repeat-x;
+	background-color:#000000;
+	}
+
+/* SECTION FOR LINKS DIVISIONS */
+div#links { 
+	margin:0;
+	padding-top:0.1cm;
+	width:100%; 
+	height:30px; 
+	text-align:center;
+	background-color:#000;
+	background-image:url(../../images/main-buttons.gif); 
+	background-repeat:repeat-x;
+	}
+	
+div#sublinks { 
+	margin:0;
+	padding:0;;
+	width:100%; 
+	height:20px;
+	background-color:#000;
+	border: solid #DAA520;
+	border-bottom-width:3px;
+	border-top-width:0;
+	border-left-width:0;
+	border-right-width:0;
+	}
+	
+/* NAVIGATION PROPERTIES */
+	
+#nav, #nav ul { 
+	padding:0px; 
+	width:900px; 
+	margin:0px; 
+	list-style:none; 
+	line-height:1.5; 
+	border: solid #000000; 
+	border-width:0;
+	}
+
+#nav li {
+	float:left;
+	width:125px;
+	}
+	
+#nav li a {
+	display: block;
+	font-size:16px;
+	width:125px;
+	color:#000000;
+	text-decoration:none;
+	}
+	
+#nav li a:hover {
+	display: block;
+	font-size:16px;
+	width:125px;
+	color:#000000;
+	font-style:italic;
+	}
+	
+/* SUB-LINK NAVIGATION PROPERTIES */
+#today {
+	position:relative;
+	float:right;
+	width:250px;
+	color:#FFF;
+	font-size:11px;
+	text-align:right;
+	}
+	
+#current {
+	position:relative;
+	float:left;
+	width:650px;
+	color:#FFF;
+	font-size:11px;
+	text-align:left;
+	}
+
+#current a:hover { color:#FFF; text-decoration:overline; }
+	
+/* SECTION FOR ALL CONTENT DIVISIONS */
+div#content { 
+	margin:0;
+	padding:0;
+	width:100%; 
+	}
+	
+div#main {
+	margin-left:auto;
+	margin-right:auto;
+	padding:0;
+	width:900px;
+	}
+	
+/* SECTION FOR ALL FOOTER DIVISIONS */
+div#footer { 
+	margin:0;
+	padding-top:0.3cm;
+	width:100%; 
+	height:30px; 
+	background-image:url(../../images/main-footer.gif); 
+	background-repeat:repeat-x;
+	}
+	
+div#footer p { 
+	margin:0;
+	text-indent:0cm; 
+	text-decoration:none; 
+	color:#FFF; 
+	text-align:center; 
+	}
+	
+div#xfooter { 
+	margin:0;
+	padding-top:0.3cm;
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:100%; 
+	height:30px; 
+	background-image:url(../../images/main-footer.gif); 
+	background-repeat:repeat-x;
+	}
+	
+div#xfooter p { 
+	margin:0;
+	text-indent:0cm; 
+	text-decoration:none; 
+	color:#FFF; 
+	text-align:center; 
+	}
+
+
+/* PAGE SPECIFIC DIVISIONS */
+
+/* HOME PAGE */
+div#register { 
+	position:relative; 
+	float:right;
+	margin:0;
+	padding:20px;
+	background-color:#999999;
+	border: solid #DAA520;
+	border-width:3px;
+	}
+
+/* PHOTO GALLERY PAGE*/
+div#title {
+	padding:0;
+	margin-left:.5cm;
+	margin-right:.5cm;
+	text-indent:0cm; 
+	text-decoration:none;
+	background-color:#000000;
+	border:solid #DAA520;
+	border-bottom-width:2px;
+	border-top-width:2px;
+	border-left-width:0px;
+	border-right-width:0px;
+	color:#FFFFFF;
+	text-align:left;
+	}
+	
+div#title p {
+	padding:0;
+	margin-left:.5cm;
+	margin-right:.5cm;
+	text-indent:0cm; 
+	}
+
+div#gallery {
+	border:0;
+	padding:.5cm;
+	margin-left:.5cm;
+	margin-right:.5cm;
+	margin-bottom:.5cm;
+	text-decoration:none;
+	text-align:left;
+	}
+
+/* PARAGRAPH PROPERTIES */
+p { 
+	font-size: 12px; 
+	margin-left: .5cm;
+	margin-right: .5cm; 
+	margin-top: .5cm; 
+	margin-bottom: 0cm; 
+	text-indent: 1.5cm;
+	text-align:justify;
+	}
+
+/* VIDEO PROPERTIES */
+div#video {
+	margin:0;
+	padding:0;
+	position:relative;
+	}
+	
+div#video a span {
+	visibility:hidden;
+	margin:0;
+	padding:0; 
+	position:absolute;
+	color:#DAA520; 
+	top:0px;
+	left:0px;
+	width:100%;
+	background-color:#000;
+	border: solid #000;
+	border-width:2px;
+	text-align:center;
+	text-decortion:none;
+	opacity:0.7; 
+	filter:alpha(opacity=70);
+	}
+
+div#video a:hover span {
+	visibility:visible;
+	margin:0;
+	padding:0;
+	position:absolute;
+	color:#DAA520; 
+	top:0px;
+	left:0px;
+	width:100%;
+	background-color:#000;
+	border: solid #000;
+	border-width:2px;
+	text-align:center;
+	text-decortion:none;
+	opacity:0.7; 
+	filter:alpha(opacity=70);
+	}
+
+/* IMAGE PROPERTIES */
+img	{ 
+	margin:0;
+	padding:0;
+	border: none;  
+	}
+
+img#post { 
+	border: solid #000000;
+	border-width:2px;
+	margin:0;
+	padding:0;
+	width:100%;
+	}
+	
+img#gallery { 
+	border: solid #000000;
+	border-width:1px;
+	margin:5px;
+	padding:0;
+	}
+
+/* HEADERS PROPERTIES */
+h1,h2,h3,h4,h5,h6 { 
+	color:#000000;
+	margin-bottom:0.5cm; 
+	margin-top:0.5cm; 
+	}
+	
+h1 { font-size: 48px; }
+	
+h2 { font-size: 42px; }
+
+h3 { font-size: 36px; }
+
+h4 { font-size: 30px; }
+
+h5 { font-size: 24px; }
+
+h6 { font-size: 18px; }
+
+/* LINE PROPERTIES */
+hr { color: #000000; width: 90%; }
+
+/* GENERAL ID PROPERTIES*/
+#reference { 
+	color:#666666; 
+	font:italic; 
+	font-size:10px; 
+	margin-left: 1cm; 
+	margin-right: 1cm; 
+	margin-top: .5cm; 
+	margin-bottom: 0cm; 
+	}
+
+#nomargin { 
+	margin-left: 0cm; 
+	margin-right: 0cm; 
+	margin-top: 0cm; 
+	margin-bottom: 0cm;
+	}
+
+#sidemargin	{ 
+	margin-left: 0.5cm; 
+	margin-right: 0.5cm; 
+	margin-top: 0cm; 
+	margin-bottom: 0cm; }
+	
+#comment {
+	margin:0;
+	font-size:10px;
+	color:#000000;
+	text-indent:0cm;
+	}
+
+/* GENERAL CLASS PROPERTIES */
+.center		{ text-align: center; }
+	
+.justify 	{ text-align: justify; }
+	
+.lefT		{ text-align: left; }
+	
+.right		{ text-align: right; }
+	
+.italic		{ font-style: italic; }
+	
+.bold 		{ font-weight: bold; }
+	
+.white 		{ color: #FFFFFF;	}
+	
+.black 		{ color: #000000; }
+
+.indent		{ text-indent: 1.5cm; }
+	
+.noindent 	{ text-indent: 0cm; }
+	
+.nomargin 	{ margin:0; }

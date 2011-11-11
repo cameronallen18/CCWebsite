@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="MIT, CC, CC@MIT, Chocolate City, Chocolate, City" />
+<link rel="shortcut icon" type="image/ico" href="favicon.ico" />
+
+<title>Activate Account</title>
+
+<!--link to the css files-->
+<link rel="stylesheet" type="text/css" href="styles/styles.css" />
+<link rel="stylesheet" type="text/css" href="styles/shadowbox/shadowbox.css" />
+
+<!--link to the javascript files-->
+<script type="text/javascript" src="styles/javascript/jquery.js"></script>
+<script type="text/javascript" src="styles/shadowbox/shadowbox.js"></script>
+
+<!--initiate the Shadwobox Code for popup media boxes-->
+<script type="text/javascript">
+Shadowbox.init({
+    language: 		'en',
+    players:  		['img', 'html', 'iframe', 'qt', 'wmp', 'swf', 'flv'],
+	autoplayMovies:	true
+});
+</script>
+
+<script Language="JavaScript">
+<!--
+function Form1_Validator(theForm)
+{
+
+if (theForm.email.value == "")
+{
+	alert("The \"E-Mail Address\" field cannot be left blank.");
+	theForm.email.focus();
+	return (false);
+}
+}
+
+//--></script>
+</head>
+<body>
+
+<div id="header">
+
+<img src="../images/main-banner.jpg" />
+
+</div><div id="links">
+
+<center>
+
+<ul id="nav">
+	<li><a href="../index.php">Home</a></li>
+
+	<li><a href="../about.php">About Us</a></li>
+    
+	<li><a href="../events.php">Events</a></li>
+	
+	<li><a href="../brothers.php">Brothers</a></li>
+
+	<li><a href="../gallery.php">Photos</a></li>
+
+	<li><a href="../contribute.php">Contribute</a></li>
+	
+	<li><a href="../contact.php">Contact Us</a></li>
+</ul>
+
+</center>
+
+</div><div id="content">
+
+<div id="sublinks">
+
+<div id="main">
+<div id="current">
+You are currently viewing the <a href="login.html">Control Panel</a>. 
+</div>
+
+<div id="today">
+Click here to go <a href="ccity.mit.edu">Home</a>.
+</div>
+</div>
+
+</div>
+
+<div id="main">
+
+<h5 class="noindent center">E-Mail Address Change</h5>
+
+<form method="POST" action="email_change.php" onSubmit="return Form1_Validator(this)" language="JavaScript" name="Form1">
+
+<p class="noindent center"><strong>New E-Mail Address:</strong><br>
+<input name="email" size="20"><br>
+</p>
+
+<p class="noindent center">
+<input type="submit" value="Submit" name="B1">
+</p>
+
+</form>
+
+</div>
+
+<div id="xfooter">
+
+<p>Chocolate City &copy; 2009</p>
+
+</div>
+</body>
+</html>

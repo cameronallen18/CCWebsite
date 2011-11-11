@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="MIT, CC, CC@MIT, Chocolate City, Chocolate, City" />
+<link rel="shortcut icon" type="image/ico" href="favicon.ico" />
+
+<title>Login</title>
+
+<!--link to the css files-->
+<link rel="stylesheet" type="text/css" href="styles/styles.css" />
+<link rel="stylesheet" type="text/css" href="styles/shadowbox/shadowbox.css" />
+
+<!--link to the javascript files-->
+<script type="text/javascript" src="styles/javascript/jquery.js"></script>
+<script type="text/javascript" src="styles/shadowbox/shadowbox.js"></script>
+
+<!--initiate the Shadwobox Code for popup media boxes-->
+<script type="text/javascript">
+Shadowbox.init({
+    language: 		'en',
+    players:  		['img', 'html', 'iframe', 'qt', 'wmp', 'swf', 'flv'],
+	autoplayMovies:	true
+});
+</script>
+
+</head>
+<body>
+
+<div id="header">
+
+<img src="../images/main-banner.jpg" />
+
+</div><div id="links">
+
+<center>
+
+<ul id="nav">
+	<li><a href="../index.php">Home</a></li>
+
+	<li><a href="../about.php">About Us</a></li>
+    
+	<li><a href="../events.php">Events</a></li>
+	
+	<li><a href="../brothers.php">Brothers</a></li>
+
+	<li><a href="../gallery.php">Photos</a></li>
+
+	<li><a href="../contribute.php">Contribute</a></li>
+	
+	<li><a href="../contact.php">Contact Us</a></li>
+</ul>
+
+</center>
+
+</div><div id="content">
+
+<div id="sublinks">
+
+<div id="main">
+<div id="current">
+You are currently viewing the <a href="login.html">Control Panel</a>. 
+</div>
+
+<div id="today">
+Click here to go <a href="ccity.mit.edu">Home</a>.
+</div>
+</div>
+
+</div>
+
+<div id="main">
+
+<h5 class="noindent center">Login to a Secure Area</h5>
+
+<FORM METHOD="POST" ACTION="redirect.php">
+
+<p class="noindent center"><strong>Username:</strong><br />
+<INPUT TYPE="text" NAME="username" SIZE=25 MAXLENGTH=25>
+</p>
+
+<p class="noindent center"><strong>Password:</strong><br />
+<INPUT TYPE="password" NAME="password" SIZE=25 MAXLENGTH=25>
+</p>
+
+<p class="noindent center">
+<input type="checkbox" name="remember" value="Yes"> Remember me from this computer.
+</p>
+
+<P class="noindent center">
+<INPUT TYPE="submit" NAME="submit" VALUE="Login" style="font-family: Verdana">
+</p>
+
+</FORM>
+
+<p class="noindent center"><a href="emailpass.html">Click here if would like your username and password to be 
+e-mailed to the address we have on file.</a></p>
+
+</div>
+
+&nbsp;<br />
+
+<div id="xfooter">
+
+<p>Chocolate City &copy; 2009</p>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+@charset "utf-8";
+/* CCITY.MIT.EDU Brothers STYLE SHEET V1.0 */
+body { 
+	background:#FFFFFF; 
+	font-family:Tahoma, Geneva, sans-serif; 
+	margin:0; 
+	padding:0; 
+	color:#000000; 
+	}
+
+a:active { color:#DAA520; text-decoration:underline; }
+
+a:hover { color:#999999;text-decoration:overline;}
+
+a { color:#DAA520; text-decoration:underline; }
+
+a:visited { color:#DAA520; text-decoration:underline; }
+
+/* SECTIONS FOR HEADER IMAGE DIVISIONS */
+div#section { 
+	position:relative;
+	margin:0;
+	padding:0;;
+	width:500px; 
+	background-color:#FFF;
+	border:0;
+	}
+
+div#input {
+	position:relative;
+	margin:0;
+	padding:0;
+	float:right;
+	width:350px;
+	height:50px;
+	color:#000;
+	font-size:12px;
+	text-align:left;
+	}
+
+div#textarea {
+	position:relative;
+	margin:0;
+	padding:0;
+	float:right;
+	width:350px;
+	color:#000;
+	font-size:12px;
+	text-align:left;
+	}
+
+div#input p {
+	text-indent: 0cm;
+	font-weight:bold;
+	}
+
+div#description {
+	position:relative;
+	margin:0;
+	padding:0;
+	float:left;
+	width:150px;
+	height:50px;
+	color:#000;
+	font-size:12px;
+	text-align:left;
+	}
+	
+div#description p {
+	text-indent: 0cm;
+	font-weight:bold;
+	}

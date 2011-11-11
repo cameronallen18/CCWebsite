@@ -1,0 +1,301 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="MIT, CC, CC@MIT, Chocolate City, Chocolate, City" />
+<link rel="shortcut icon" type="image/ico" href="favicon.ico" />
+
+<title>Registration</title>
+
+<!--link to the css files-->
+<link rel="stylesheet" type="text/css" href="styles/styles.css" />
+<link rel="stylesheet" type="text/css" href="styles/shadowbox/shadowbox.css" />
+
+<!--link to the javascript files-->
+<script type="text/javascript" src="styles/javascript/jquery.js"></script>
+<script type="text/javascript" src="styles/shadowbox/shadowbox.js"></script>
+
+<!--initiate the Shadwobox Code for popup media boxes-->
+<script type="text/javascript">
+Shadowbox.init({
+    language: 		'en',
+    players:  		['img', 'html', 'iframe', 'qt', 'wmp', 'swf', 'flv'],
+	autoplayMovies:	true
+});
+</script>
+
+<script Language="JavaScript">
+<!--
+function Form1_Validator(theForm)
+{
+  	if (theForm.firstname.value == "")
+  {
+    alert("Please enter a value for the \"firstname\" field.");
+    theForm.firstname.focus();
+    return (false);
+  }
+  	if (theForm.lastname.value == "")
+  {
+    alert("Please enter a value for the \"lastname\" field.");
+    theForm.firstname.focus();
+    return (false);
+  }
+	if (theForm.username.value == "")
+  {
+    alert("Please enter a value for the \"username\" field.");
+    theForm.firstname.focus();
+    return (false);
+  }
+	if (theForm.email.value == "")
+  {
+    alert("Please enter a value for the \"email\" field.");
+    theForm.email.focus();
+    return (false);
+  }	
+  	if (theForm.password.value == "")
+  {
+    alert("Please enter a value for the \"password\" field.");
+    theForm.email.focus();
+    return (false);
+  }
+	if (theForm.password.value != theForm.confirm.value)
+	{
+		alert("The two passwords are not the same.");
+		theForm.confirm.focus();
+		return (false);
+	}
+}
+
+//--></script>
+</head>
+<body>
+
+<div id="header">
+
+<img src="../images/main-banner.jpg" />
+
+</div>
+
+<div id="links">
+
+<center>
+
+<ul id="nav">
+	<li><a href="../index.php">Home</a></li>
+
+	<li><a href="../about.php">About Us</a></li>
+    
+	<li><a href="../events.php">Events</a></li>
+	
+	<li><a href="../brothers.php">Brothers</a></li>
+
+	<li><a href="../gallery.php">Photos</a></li>
+
+	<li><a href="../contribute.php">Contribute</a></li>
+	
+	<li><a href="../contact.php">Contact Us</a></li>
+</ul>
+
+</center>
+
+</div>
+
+<div id="content">
+
+<div id="sublinks">
+
+<div id="main">
+	<div id="current">
+	You are currently viewing the <a href="login.html">Control Panel</a>. 
+	</div>
+
+	<div id="today">
+	Click here to go <a href="http://ccity.mit.edu">Home</a>.
+	</div>
+</div>
+    
+</div>
+
+<div id="main">
+
+<h5 class="noindent center">Register Your Account</h5>
+
+<div id="image">
+
+<div id="register" style="width:380px;">
+
+<div id="video">
+<a href="../images/cclogo.gif" rel="shadowbox" title="Chocolate City Logo"><img width="100%" src="../images/cclogo.gif" /></a>
+</div>
+
+</div>
+
+</div>
+<FORM METHOD="POST" ACTION="../contact.php">
+
+<table width="450px" border="0" cellpadding="0" cellspacing="0">
+<tr>
+	<td colspan="2">
+    <h6 class="center">Request the Brother Identification Code</h6>
+    </td>
+</tr>
+
+<tr>
+	<td colspan="2">
+    <p class="noindent"><strong>Note:</strong> In order to register for this website as a Brother of Chocolate City, an Identification Code is needed. Please enter your e-mail address below. You will be redirected to the <span class="italic">Contact Us</span> page if you are a Brother and need to request the "Brother Identification Code."</p>
+    </td>
+</tr>
+
+<tr>
+	<td width="50%">
+    <p class="noindent center"><strong>First Name:</strong><br />
+	<INPUT TYPE="text" NAME="request_fname" SIZE=25 MAXLENGTH=100>
+	</p>
+    </td>
+    <td width="50%">
+    <p class="noindent center"><strong>Last Name:</strong><br />
+	<INPUT TYPE="text" NAME="request_lname" SIZE=25 MAXLENGTH=100>
+	</p>
+    </td>
+</tr>
+
+<tr>
+	<td width="50%">
+    <p class="noindent center"><strong>Class Year:</strong><br />
+	<INPUT TYPE="text" NAME="request_year" SIZE=25 MAXLENGTH=100>
+	</p>
+    </td>
+    <td width="50%">
+    <p class="noindent center"><strong>E-Mail Address:</strong><br />
+	<INPUT TYPE="text" NAME="request_email" SIZE=25 MAXLENGTH=100>
+	</p>
+    </td>
+</tr>
+
+<tr>
+	<td colspan="2">
+    <p class="noindent center">
+	<INPUT TYPE="hidden" NAME="request_body" VALUE="TRUE" />
+    <INPUT TYPE="hidden" NAME="request_subject" VALUE="REQUEST: Brother Identification Code" />
+	<INPUT TYPE="submit" VALUE="Request Brother Identification Code">
+	</p>
+    </td>
+</tr>
+</table>
+
+</FORM>
+
+<p>&nbsp;</p>
+
+<FORM METHOD="POST" ACTION="register.php" onSubmit="return Form1_Validator(this)" language="JavaScript" name="Form1">
+
+<table width="450px" border="0" cellpadding="0" cellspacing="0">
+<tr>
+	<td colspan="2">
+    <h6 class="center">Register for CCity On-Line</h6>
+    </td>
+</tr>
+
+<tr>
+	<td colspan="2">
+    <p class="noindent">Please complete the form below if you would like to register for the Chocolate City Website. If you are not a Brother of Chocolate City, your account will only let you interact with content on the website. If you are a brother, you will be directed to edit your profile page.</p>
+    </td>
+</tr>
+
+<tr>
+	<td width="50%">
+    <p class="noindent center"><strong>First Name:</strong><br />
+	<INPUT NAME="firstname" SIZE=25 MAXLENGTH=50 tabindex="1">
+	</p>
+	</td>
+    <td width="50%">
+    <p class="noindent center"><strong>Last Name:</strong><br />
+	<INPUT NAME="lastname" SIZE=25 MAXLENGTH=50 tabindex="2">
+	</p>
+    </td>
+</tr>
+
+<tr>
+	<td width="50%">
+    <p class="noindent center"><strong>Username:</strong><br />
+	<INPUT NAME="username" SIZE=25 MAXLENGTH=50 tabindex="3">
+	</p>
+	</td>
+    <td width="50%">
+    <p class="noindent center"><strong>Password:</strong><br />
+	<INPUT TYPE="password" NAME="password" SIZE=25 MAXLENGTH=25 tabindex="5">
+	</p>
+    </td>
+</tr>
+
+<tr>
+	<td width="50%">
+   	<p class="noindent center"><strong>E-Mail Address:</strong><br />
+	<INPUT TYPE="text" NAME="email" SIZE=25 MAXLENGTH=100 tabindex="4">
+	</p>
+	</td>
+    <td width="50%">
+    <p class="noindent center"><strong>Confirm Password:</strong><br />
+	<INPUT TYPE="password" NAME="confirm" SIZE=25 MAXLENGTH=25 tabindex="6">
+	</p>
+    </td>
+</tr>
+
+<tr>
+	<td width="50%">
+   	<p class="noindent center"><strong>Identification Code:</strong><br /></p>
+	</td>
+    <td width="50%">
+    <p class="noindent center"><INPUT NAME="register_code" SIZE=25 MAXLENGTH=25 tabindex="7"><br /></p>
+    </td>
+</tr>
+
+<tr>
+	<td colspan="2">
+    <p class="noindent center">
+	<INPUT TYPE="submit" NAME="submit" VALUE="Submit My Registration" style="font-family: Tahoma"><br />
+	</p>
+    </td>
+</tr>
+</table>
+
+</FORM>
+
+<p>&nbsp;</p>
+
+<FORM METHOD="link" ACTION="emailpass.html">
+
+<table width="450px" border="0" cellpadding="0" cellspacing="0">
+<tr>
+	<td>
+    <p class="noindent"><strong>Already have an Account?</strong> Click below to have your credentials e-mailed to you. You will be required to provide your registration e-mail.</p>
+    </td>
+</tr>
+
+<tr>
+	<td>
+    <p class="noindent center">
+	<INPUT TYPE="submit" VALUE="Request Login Credentials">
+	</p>
+    </td>
+</tr>
+</table>
+
+</FORM>
+
+</div>
+
+<br clear="all" />
+
+</div>
+
+<p>&nbsp;</p>
+
+<div id="footer">
+
+<p>Chocolate City &copy; 2009</p>
+
+</div>
+</body>
+</html>
